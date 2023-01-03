@@ -1,0 +1,14 @@
+{
+  "label": "CMD Commmand Runner",
+  "description": "Executa comando no cmd em segundo plano",
+  "RunCmdTask.details.label": "Executar comando no CMD",
+  "RunCmdTask.details.description": "Executa tarefas no cmd e retorna a saída",
+  "RunCmdTask.details.node_label": "CMD Command",
+  "RunCmdTask.details.return_label": "Output JSON String",
+  "RunCmdTask.details.return_label_description": "Retorna uma JSON string campos {output: string, hasOutput: boolean, error: boolean}.",
+  "RunCmdTask.details.string_message.label": "Comando a ser executado",
+  "RunCmdTask.details.error_running_command": "Error running command:\n",
+  "RunCmdTask.details.error_string_empty": "Campo comando não pode ser vazio",
+  "group": "Natan Duarte",
+  "vendor": "NatanDuarte"
+}

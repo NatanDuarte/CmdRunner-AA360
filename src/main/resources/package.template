@@ -1,0 +1,11 @@
+{
+  "name": "FileDetails",
+  "label": "[[label]]",
+  "description": "[[description]]",
+  "group": "",
+  "artifactName": "",
+  "packageVersion": "",
+  "codeVersion": "",
+  "author": "Natan Duarte",
+  "commands": []
+}

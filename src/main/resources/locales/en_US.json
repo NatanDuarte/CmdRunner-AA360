@@ -1,0 +1,14 @@
+{
+  "label": "CMD Commmand Runner",
+  "description": "Run cmd in background",
+  "RunCmdTask.details.label": "Run command on CMD",
+  "RunCmdTask.details.description": "Runs cmd task and returns output",
+  "RunCmdTask.details.node_label": "CMD Command",
+  "RunCmdTask.details.return_label": "Output JSON String",
+  "RunCmdTask.details.return_label_description": "returns a JSON with the fields {output: string, hasOutput: boolean, error: boolean}",
+  "RunCmdTask.details.string_message.label": "Command to run",
+  "RunCmdTask.details.error_running_command": "Error running command:\n",
+  "RunCmdTask.details.error_string_empty": "Command field must not be empty",
+  "group": "Natan Duarte",
+  "vendor": "NatanDuarte"
+}
