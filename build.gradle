@@ -84,16 +84,16 @@ configure(allprojects) {
 
 
     dependencies {
-        compileOnly name: 'command-annotations', version: '1+'
-        compileOnly name: 'bot-runtime', version: '1+'
-        compileOnly name: 'bot-api', version: '1+'
-        compileOnly name: 'common-security', version: '1+'
-        implementation name: 'i18n-api', version: '1+'
-        apt name: 'command-processor', version: '1+'
+        compileOnly group: "$groupName", name: 'command-annotations', version: '1+'
+        compileOnly group: "$groupName", name: 'bot-runtime', version: '1+'
+        compileOnly group: "$groupName", name: 'bot-api', version: '1+'
+        compileOnly group: "$groupName", name: 'common-security', version: '1+'
+        implementation group: "$groupName", name: 'i18n-api', version: '1+'
+        apt group: "$groupName", name: 'command-processor', version: '1+'
         compileOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$loggerVersion"
         testImplementation "org.testng:testng:$testNgVersion"
-        testImplementation name: 'bot-runtime', version: '1+'
-        testImplementation name: 'bot-api', version: '1+'
+        testImplementation group: "$groupName", name: 'bot-runtime', version: '1+'
+        testImplementation group: "$groupName", name: 'bot-api', version: '1+'
         implementation group: 'net.java.dev.jna', name: 'jna-platform', version: "$jnaVersion"
 
         // https://mvnrepository.com/artifact/io.github.alekseysotnikov/CmdTool
@@ -111,14 +111,6 @@ configure(allprojects) {
 
         // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
         implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.6'
-
-
-        //Remove these dependencies if not needed
-//		compile group: 'org.springframework', name: 'spring-jms', version: '5.0.2.RELEASE'
-//		compile group: 'org.apache.activemq', name: 'activemq-all', version: '5.15.0'
-//		compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
-//		// https://mvnrepository.com/artifact/com.h2database/h2
-//		compile group: 'com.h2database', name: 'h2', version: '1.4.200'
 
     }
 
